@@ -1,49 +1,49 @@
-# Hello website!
+# Inna — Front-End Developer Portfolio
 
-This is a basic HTML starter project you can build on however you like. No need to save. While you develop your site, your changes will happen ✨ immediately in the preview window. On the left you'll see the files that make up your site, including HTML, JavaScript, and CSS. You can upload assets like images or audio in `assets`. The rest is up to you and your imagination. 🦄
+Welcome to my personal web portfolio!  
+This project showcases my front-end development work, design background, and selected projects built with **React**, **Redux**, **JavaScript**, **HTML**, **CSS**, and various **APIs**.
 
-_Last updated: 28 Feb 2023_
+---
 
-## What's in this project?
+## 🎨 Overview
 
-← `README.md`: That's this file, where you can tell people what your cool website does and how you built it.
+This portfolio website introduces my professional background, highlights my skills, and presents a collection of interactive web projects.  
 
-← `index.html`: This is the main web page for your site. The HTML defines the structure and content of the page using _elements_. You'll see references in the HTML to the JS and CSS files. Try clicking the image in the center of the page!
+**Live Demo:** [Your Portfolio Link Here]
 
-← `style.css`: CSS files add styling rules to your content. The CSS applies styles to the elements in your HTML page. The style rules also make the image move when you click it.
+---
 
-← `script.js`: If you're feeling fancy you can add interactivity to your site with JavaScript. The code in the JavaScript file runs when the page loads, and when the visitor clicks the button you can add using the code in the TODO.
+## 🧠 Tech Stack
 
-Open each file and check out the comments (in gray) for more info.
+### 🧩 Core Technologies
+- **HTML5** — Semantic and accessible structure  
+- **CSS3** — Responsive layouts, animations, gradients  
+- **JavaScript (ES6+)** — Interactive features and dynamic UI behavior  
 
-## Try this next 🏗️
+### ⚛️ Frameworks & Libraries
+- **React** — For building reusable, modular UI components  
+- **Redux** — State management for React Book application
+- **GSAP + ScrollTrigger** — Smooth animations and scroll effects  
+- **Particles.js** — Animated background particles  
 
-Take a look in `TODO.md` for next steps you can try out in your new site!
+### 🌐 APIs Used
+Several projects integrate **public APIs**, such as:
+- **Google Books API** (Book Finder app)
+- **Weather API** (Global weather finder)
 
-___Want a minimal version of this project to build your own website? Check out [Blank Website](https://glitch.com/edit/#!/remix/glitch-blank-website)!___
+---
 
-## Ready to share your site?
+## 💻 Featured Projects
 
-Add these meta tags for SEO and social sharing between your page `<head></head>` tags, changing the values for your site:
+| Project | Description | Stack |
+|----------|--------------|-------|
+| **📚 Book Finder** | React app using Google Books API to search and display books | React, Redux, React Router, CSS |
+| **☀️ Global Weather Finder** | Displays current weather by city name | HTML, CSS, JavaScript, API |
+| **🪐 Space Quiz** | Guess the planet’s position in the solar system | HTML, CSS, JavaScript |
+| **🎵 Music Search** | Real-time search filtering for songs | HTML, CSS, JavaScript |
+| **🎄 Christmas Countdown** | Timer with sound effects and animated snow | HTML, CSS, JavaScript |
+| **🧘 Meditation Timer** | Relaxing timer with ambient sounds | HTML, CSS, JavaScript |
+| **🏠 Mortgage Calculator** | Helps estimate monthly mortgage payments | HTML, CSS, JavaScript |
+| **💬 Tongue Twister Trainer** | Timer-based pronunciation practice app | HTML, CSS, JavaScript |
+| **📖 Book Quiz** | Interactive quiz to test your knowledge | HTML, CSS, JavaScript |
 
-```
-<link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
-<meta name="description" content="A simple website, built with Glitch. Remix it to get your own."/>
-<meta name="robots" content="index,follow" />
-<meta property="og:title" content="Hello World!" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
-<meta property="og:description" content="A simple website, built with Glitch. Remix it to get your own."/>
-<meta property="og:image" content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"/>
-<meta name="twitter:card" content="summary" />
-```
-
-![Glitch](https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2FLogo_Color.svg?v=1602781328576)
-
-## You built this with Glitch!
-
-[Glitch](https://glitch.com) is a friendly community where millions of people come together to build web apps and websites.
-
-- Need more help? [Check out our Help Center](https://help.glitch.com/) for answers to any common questions.
-- Ready to make it official? [Become a paid Glitch member](https://glitch.com/pricing) to boost your app with private sharing, more storage and memory, domains and more.
-# portfolio-ig
