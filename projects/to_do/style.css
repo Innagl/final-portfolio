@@ -1,0 +1,133 @@
+body {
+    background-color: #0d0d0d;
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* padding-left: 40px;
+    padding-right: 40px; */
+}
+
+h1 {
+    color: #cfc0a6;
+    font-size: 48px;
+    margin-top: 80px;
+}
+
+span {
+    color: #ff5631;
+}
+.input-button {
+    display: flex;
+}
+
+.input {
+    background-color: #353535;
+    color: #dededa;
+    border: none;
+    border-radius: 28px;
+    padding-left: 16px;
+    height: 56px;
+    font-size: 16px;
+    width: 230px;
+}
+
+.input:focus {
+    outline: none; 
+    border-color: #ff5631;
+  
+}
+
+.btn {
+    background-color: #ff5631;
+    border: none;
+    width: 56px;
+    border-radius: 30px;
+    margin-left: 8px;
+}
+
+.toDoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline-start: 1px;
+    
+}
+
+
+
+.taskAdded {
+    background-color: #1e1e1e;
+    list-style-type: none;
+    height: 56px;
+    width: 300px;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; 
+    color: #ffffff;
+
+    font-size: 20px;
+    border: 1px solid #cfc0a6;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+
+.taskCompleted {
+    background-color: #1e1e1e;
+    color: rgb(128, 128, 128);
+    border: 1px solid #696258;
+    text-decoration: line-through;
+    transition: all .5 s ease;
+}
+
+.bottom-text {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #ccc;
+    padding: 16px;
+    text-align: center;
+}
+
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 56px;
+}
+
+p {
+    color: rgb(128, 128, 128);
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Important for vertical centering */
+  }
+
+  .container {
+    max-width: 600px;
+    width: 100%;
+  }
+  
+
+}
+
+@media (min-width: 375px) {
+    p {
+    width: 100%;
+      max-width:90%;
+    text-align: center;
+  }
+}

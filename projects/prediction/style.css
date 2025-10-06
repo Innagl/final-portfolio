@@ -1,0 +1,51 @@
+body {
+    background-image: url("https://cdn.glitch.global/f16f1e4b-77ed-4ca2-ae9e-c27344b8f2b3/bg.png?v=1722380583725");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40vw;;
+}
+
+#icon {
+    display: none;
+}
+
+#heading {
+    font-family: "Roboto", sans-serif;
+    color: #bbe9c4;
+}
+
+#par {
+    font-family: "Fredericka the Great", serif;
+    font-size: 48px;
+    color: #bbe9c4;
+}
+
+#btn {
+   background-color: transparent;
+   border: solid 1px #8BBD95;
+   font-family: "Roboto", sans-serif;
+   font-size: 24px;
+   color: #bbe9c4;
+   width: 400px;
+   padding: 20px;
+   cursor: pointer;
+}
+
+#btn:hover {
+    background-color: #8BBD95;
+    color: #278b54;
+}

@@ -1,0 +1,119 @@
+body {
+  background-image: url("https://cdn.glitch.global/5a01273b-a68c-4b04-8d58-2d34b2fed4e4/World%20Map%20(1).png?v=1722695584813");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+} 
+
+html, body {
+  overflow-x: hidden;
+}
+
+
+.main-container, .question-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.question-container {
+    background-color: #fafafa;
+    width: 432px;
+    padding: 24px;
+    box-shadow: 0px 8px 80px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+    width: 490px;
+    background-color: hsl(60, 2%, 95%);
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 4px;
+    box-shadow: 0px 8px 80px 0px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+  box-sizing: border-box;
+}
+
+#one, #two, #three {
+    width: 110px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: black;
+    color: hsl(60, 2%, 95%);
+    font-size: 20px;
+    line-height: 28px;
+    margin: 8px;
+    border-radius: 4px;
+}
+
+#three {
+    display: none;
+    width: 180px;
+}
+
+@media (max-width: 375px) {
+  body {
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    padding: 16px;
+    height: auto;
+  }
+
+  .question-container {
+    width: 90%;
+    max-width: 360px;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    
+  }
+
+  h1 {
+    font-size: 20px;
+    width: 90%;
+    padding: 12px;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+
+h2 {
+  font-size: 16px;
+  width: 100%;        
+  max-width: 100%;    
+  box-sizing: border-box;
+  margin: 0 auto; 
+}
+
+
+  #one, #two, #three {
+    max-width: 100%;
+    width: 80%;
+    font-size: 18px;
+    padding: 10px 0;
+  }
+
+  #three {
+    width: 90%; 
+  }
+
+
+}

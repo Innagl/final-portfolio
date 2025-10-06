@@ -1,0 +1,218 @@
+body {
+    background-image: url("https://cdn.glitch.global/632c6f19-8922-46d6-b4ef-b7cd10a7aeba/Bank%20Card.png?v=1721163233150");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; 
+}
+
+.main-container {
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 42vw; 
+    height: 48vh;
+    border-radius: 3.65vw; 
+    background: rgba(255, 255, 255, 0.20);
+    box-shadow: 1.04vw 0.52vw 2.60vw 0px rgba(0, 0, 0, 0.15); 
+    backdrop-filter: blur(0.78vw); 
+    padding: 24px 32px;
+}
+
+.bottom-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: absolute;
+    bottom: 0;
+    width: 42vw; 
+    height: 14vh;
+    border-radius: 0 0 3.65vw 3.65vw; 
+    background: linear-gradient(93deg, #652DC0 0.7%, rgba(105, 84, 235, 0.79) 53.37%, rgba(207, 71, 202, 0.49) 96.14%);
+    padding: 2px 32px;
+}
+
+#timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    color: #652DC0;
+}
+
+#countdown {
+    font-size: 44px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    width: 150px;
+    margin: 2px;
+}
+
+#icon {
+    fill:  hsl(263, 62%, 60%); ;
+    display: none;
+}
+
+.heading {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    top: 4vh;
+    text-align: center;
+}
+
+b {
+  color: #652DC0;   
+}
+
+
+h1 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #1d0a3b;   
+}
+
+h4 {
+    font-size: 1.275rem;
+    font-weight: 400;
+}
+
+#par {
+  /* width: 800px; */
+  width: 96%;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    color: #160c24;
+    margin-top: 6vh;
+}
+
+#btn {
+    background-color: transparent; 
+    border: solid 1px #FFEEFC; 
+    border-radius: 2vh;
+    padding: 16px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFEEFC; 
+    cursor: pointer; 
+    text-transform: none; 
+    margin: 1vh 0;
+}
+
+#btn:hover {
+    background-color: #ECB4E3;
+    color: #652DC0;
+}
+
+
+/* --- Responsive Styles --- */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .main-container {
+    width: 85vw;
+    height: 32vh;
+    padding: 20px 24px;
+    border-radius: 3vw;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+    backdrop-filter: blur(6px);
+  }
+
+  .bottom-container {
+    width: 85vw;
+    height: 12vh;
+    padding: 0 24px;
+    border-radius: 0 0 3vw 3vw;
+  }
+
+  #countdown {
+    font-size: 36px;
+    width: 120px;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+  }
+
+  #par {
+    font-size: 1.1rem;
+    margin-top: 4vh;
+  }
+
+  #btn {
+    padding: 14px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-container {
+    width: 85vw;
+    height: 48vh;
+    padding: 20px 24px;
+    border-radius: 3vw;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+    backdrop-filter: blur(6px);
+  }
+}
+
+/* Mobile */
+@media (max-width: 414px) {
+  body {
+    height: 100vh; /* full viewport height */
+    width: 100vw;
+    padding: 0;     /* no padding */
+  }
+
+  .main-container {
+    width: 80vw;
+    height: 40vh;
+    padding: 16px 16px 56px 16px; /* padding bottom to clear button container */
+    border-radius: 4vw;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  .bottom-container {
+    width: 80vw;
+    height: 10vh;
+    padding: 0 16px;
+    border-radius: 0 0 4vw 4vw;
+  }
+
+  #countdown {
+    font-size: 28px;
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  #par {
+    font-size: 1rem;
+    margin-top: 3vh;
+  }
+
+  #btn {
+    padding: 12px;
+    font-size: 13px;
+  }
+}

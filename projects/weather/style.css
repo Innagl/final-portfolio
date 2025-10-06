@@ -1,0 +1,145 @@
+
+
+* {  
+    box-sizing: border-box;
+    font-family: "Overpass", sans-serif;
+}
+  
+body, html {
+    background: linear-gradient(180deg, rgba(1, 61, 57, 0.92) 68.75%, rgba(1, 23, 1, 0.79) 100%), #013D39;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    color: #fafafa;
+}
+
+#input {
+    background-color: rgba(10, 80, 75, 0.92);
+    border-radius: 20px;
+    width: 328px;
+    border: 3px solid #e0f1f0;
+    color: #93b7b5;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#input:focus {
+    background-color: #fafafa;
+}
+
+#date-place {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#city {
+    color: #fafafa;
+    font-size: 40px;
+    margin: 40px 16px 0px;
+}
+
+#date {
+    color: #fafafa;
+    font-size: 20px;
+}
+
+#temperature {
+    text-align: center;
+    color: #fafafa;
+    font-size: 104px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#feelsLike {
+    color: #fafafa;
+    font-size: 30px;
+    font-weight: bold;
+}
+  
+#conditions {
+    color: #fafafa;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+}
+  
+#variation {
+    color: #fafafa;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.blocks-container {
+     display: flex;
+     flex-direction: column;
+     align-items: center; 
+     gap: 20px; 
+     display: none;
+}
+
+.row-blocks {
+    display: flex;
+    gap: 20px;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 154px;
+    height: 146px;
+    border-radius: 20px;
+    padding: 8px 16px 16px 16px;
+    color: #fafafa;
+    border: 1px solid #e0f1f0;
+    background: radial-gradient(107.32% 141.42% at 0% 0%, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.00) 100%);
+    box-shadow: -5px -5px 250px 0px rgba(255, 255, 255, 0.02) inset;
+    backdrop-filter: blur(21px);
+}
+
+.icon-text {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+#displayWind, #displayHumidity, #displayFeelsLike, #displayCondition {
+    font-size: 44px;
+    margin-top: 12px;
+    margin-bottom: 2px;
+}
+
+.text {
+    display: inline-flex;
+    align-items: last baseline;
+    gap: 4px;
+}
+
+.sign {
+    font-size: 14px;
+}
+
+#weather {
+    width: 96px;
+     height: 96px;
+}
+
+

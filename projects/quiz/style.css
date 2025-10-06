@@ -1,0 +1,264 @@
+
+body {
+  background-image: url("https://cdn.glitch.global/5eed0720-2e81-4528-bf0b-1d4f2b73cdb8/bookCover.png?v=1721995694879");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} 
+
+.container {
+  width: 800px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#book {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0B0A4C;
+  border: solid 1px #3a3a5d;
+  border-radius: 16px;
+  padding: 40px;
+  margin: 32px;
+  color: ffffff;
+}
+
+#divSecondQuestion, #divThirdQuestion, #divFourthQuestion, #divFifthQuestion, #submitBtn {
+  display: none;
+}
+
+p {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #181A1A;
+  width: 608px;
+  padding: 32px;
+  border-radius: 10px;
+  color: white;
+}
+
+.back-step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+h1, h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  margin-top: 40px;
+  margin-bottom: 32px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500; 
+}
+  
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  background-color: #252727;
+  width: 500px;
+  height: 56px;
+  border-radius: 8px;
+  padding-left: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.button {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 2.4px;
+  font-weight: 600;
+  width: 280px;
+  border-radius: 15px;
+  background: #CDE7BE;
+  color: #252727;
+  padding: 16px;
+  border: none;
+  margin-top: 24px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #fafafa;
+}
+
+#btnSecondary {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 2.4px;
+  font-weight: 600;
+  width: 280px;
+  border-radius: 15px;
+  border: 2px solid #CDE7BE; 
+  background: transparent; 
+  padding: 16px;
+  margin-top: 24px;
+}
+
+#btnSecondary:hover {
+  background-color: rgba(205, 231, 190, 0.1); 
+}
+
+
+a {
+  text-decoration: none;
+  color: #CDE7BE;
+}
+
+#result {
+  margin: auto;
+  margin-top: 10px;
+}
+
+/* Tablet: max-width 768px */
+@media (max-width: 768px) {
+  .container {
+    width: 90vw;
+    height: auto;
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .main-container {
+    width: 90vw;
+    padding: 24px;
+    margin: 16px;
+    border-radius: 12px;
+  }
+
+  .row {
+    width: 100%;
+    font-size: 16px;
+    height: 48px;
+    padding-left: 12px;
+  }
+
+  .button,
+  #btnSecondary {
+    width: 90%;
+    font-size: 15px;
+    padding: 14px;
+    margin-top: 20px;
+  }
+
+  h2 {
+    font-size: 22px;
+    margin-top: 32px;
+    margin-bottom: 24px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  svg {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+/* Mobile: max-width 480px */
+@media (max-width: 480px) {
+.container {
+    width: 80vw;
+    height: auto;
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .main-container {
+    width: 80vw;
+    padding: 24px;
+    margin: 16px;
+    border-radius: 12px;
+  }
+
+  .row {
+    width: 95%;
+    font-size: 16px;
+    height: 48px;
+    padding-left: 12px;
+  }
+
+  .button,
+  #btnSecondary {
+    width: 95%;
+    font-size: 15px;
+    padding: 14px;
+    margin-top: 20px;
+  }
+
+  h2 {
+    font-size: 22px;
+    margin-top: 32px;
+    margin-bottom: 24px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+    svg {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 375px) {
+.container {
+    width: 80vw;
+    height: auto;
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .main-container {
+    width: 80vw;
+    padding: 24px;
+    margin: 16px;
+    border-radius: 12px;
+  }
+
+    h1 {
+    font-size: 24px;
+
+  }
+
+      svg {
+    width: 100%;
+    max-width: 353px;
+  }
+}
+  

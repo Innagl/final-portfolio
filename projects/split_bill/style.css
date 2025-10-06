@@ -1,0 +1,297 @@
+html {
+    height: 100%;
+} 
+
+body {
+    background-image: url("https://cdn.glitch.global/a80cd91c-97d1-4ae3-9fd7-f920d58583fd/Group%201000002254.png?v=1720350721580");
+      min-height: 100vh; /* ✅ Let it grow beyond viewport */
+  width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+/* .main-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 40px;
+    width: 1320px;
+    color: #fafafa;
+    margin: 4vh auto;
+} */
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    max-width: 100%;
+    width: 90%;
+    margin: 4vh auto;
+}
+
+.main-container img {
+  width: 100%;
+  max-width: 450px;
+  height: 225px; /* 🔻 Half the height (assuming original was ~450px) */
+  object-fit: cover; /* or try "contain" if you want full image inside bounds */
+  display: block;
+}
+
+
+
+
+
+.bill-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    inset-inline: center;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 0 auto;
+    min-height: 500px;
+    height: auto;
+    padding: 24px;
+    background-color: #1E1E1E;
+    border: 1px solid #333333;
+
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    font-family: 'Montserrat', sans-serif;
+    color: #fafafa;
+}
+
+.billAndPeople {
+  display: flex;
+  flex-wrap: wrap;
+   justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+}
+
+    
+
+.labelAndInput {
+  flex: 1;
+  min-width: 0;
+  padding: 0 8px;
+  width: 100%;
+}
+
+
+.icon-text {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.icon {
+    width: 1;
+    padding-right: 8px;
+}
+
+p {
+    margin: 8px 0px;
+}
+
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color:#f3f3f3;
+    margin-bottom: 40px;
+}
+
+input {
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px 16px 8px 16px;
+      width: 100%;
+  max-width: 100%;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 16px;
+    background-color: hsl(34, 15%, 78%);
+}
+
+
+#addTip {
+    background-color: none;
+    border: 1px solid #BC9A6C;
+    padding: 10px;
+}
+
+#btn {
+    background-color: #BC9A6C;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 32px; 
+}
+
+#label, #showTotlaAmountToPay, #tip, h1 {
+    margin-left: 8px;
+}
+
+/* #addTip, #btn, #tip, #showTotlaAmountToPay {
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    width: 364px;
+    margin-left: 8px;
+
+width: 100%;
+  max-width: 100%;
+  margin-left: 0;
+} */
+
+#tip {
+    font-family: 'Montserrat', sans-serif;
+    display: none;
+    padding: 4px;
+    border-radius: 6px;
+    margin-top: 4px;
+}
+
+#showTotlaAmountToPay {
+    display: flex;
+    border: 1px solid #BC9A6C;
+    margin-top: 32px;
+}
+
+#dashLine {
+    border: 1px dashed #BC9A6C;
+}
+
+#billSplit, #totalTip, #totalAmount {
+    font-family: 'Montserrat', sans-serif;
+    color: #e9e9e9;
+    margin: 8px;
+}
+
+img {
+ width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+  .labelAndInput {
+    width: 100%;
+     flex: 1;
+  min-width: 0; /* allows inputs to shrink if needed */
+  padding: 0 8px;
+  }
+
+  .mobile-only {
+  display: none;
+}
+
+
+
+@media (max-width: 912px) {
+  .mobile-only {
+    display: block;
+    max-width: 100%;
+    width: 200px;
+    height: auto;
+    margin: 0 auto 16px auto; /* center and space below */
+  }
+
+  .main-container {
+    flex-direction: column;
+    align-items: center; /* Center both */
+  }
+
+
+ .main-container img {
+  height: 225px;
+  width: 100%;
+  max-width: 450px;
+  object-fit: cover;
+}
+
+
+
+  .billAndPeople {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .labelAndInput {
+    width: 100%;
+    padding: 0;
+  }
+
+  .labelAndInput input {
+    width: 100%;
+  }
+
+  #addTip,
+  #btn,
+  #tip,
+  #showTotlaAmountToPay {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  }
+}
+
+
+
+@media (max-width: 414px) {
+  h1 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  #coffee {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0px;
+    padding-top: 0px;
+      width: 95%; /* Or 100% */
+    max-width: 100%;
+  }
+
+.main-container img {
+  width: 100% !important;
+  max-width: 100% !important; /* Allow full container width */
+  height: 20%; /* Let height adjust to width */
+  object-fit: cover !important;
+}
+
+
+ img {
+    min-width: 0 !important;
+  }
+}

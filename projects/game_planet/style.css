@@ -1,0 +1,200 @@
+body {
+    background-image: url("https://cdn.glitch.global/4f56d5fc-e85c-4ab2-8717-a9acf754c71c/Frame%20116.png?v=1720050102720");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-position: center;
+    overflow-x: hidden;
+    margin: 0;
+    background-color: black;
+}
+
+#par {
+    display: flex;
+    justify-content: start;
+    font-family: "Krona One", sans-serif;
+    color: white;
+    margin-top: 4vh;
+    margin-left: 4vh;
+}
+
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+
+h4 {
+    color: rgb(212, 211, 250);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
+  
+}
+
+button {
+    background-color: #bb3f4a;
+    color: white;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 24px;
+    font-size: 24px;
+    width: 332px;
+    margin-top: 24px;
+  
+}
+
+
+.planets-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 1rem;
+    flex-wrap: wrap; 
+    overflow-x: hidden; 
+    box-sizing: border-box; 
+    max-width: 100%;
+}
+
+.planet {
+    padding: 24px;
+}
+
+input {
+    padding: 16px;
+    border-radius: 24px;
+    background-color: hsl(240, 28%, 21%);
+    color: white;
+    width: 300px;
+    font-size: 18px;
+    border: none;
+    margin-top: 24px;
+}
+
+
+input:focus {
+    outline: none;
+    border-color: #bb3f4a;
+    box-shadow: 0 0 6px #bb3f4a;
+}
+
+#sun {
+    width: 24.6vh;
+}
+
+#mercury {
+    width: 3.3vh;
+}
+
+#venus {
+    width: 3.6vh;
+}
+
+#earth {
+    width: 8vh;
+}
+
+
+#mars {
+    width: 7.2vh;
+}
+
+#jupiter {
+    width: 15.4vh;
+}
+
+#saturn {
+    width: 40.2vh;
+}
+
+#uranus {
+    width: 5rem;
+}
+
+#neptune {
+    width: 3.75rem;
+}
+
+#pluto {
+    width: 2.5rem;
+}
+
+@media all and (max-width: 1368px) {
+
+    .planet {
+        padding: 16px;
+    }
+}
+
+@media all and (max-width: 500px) {
+
+    #par {
+        margin: 12px;
+    }
+
+    h1 { 
+        margin-top: 20px;
+        font-size: 24px;
+    }
+
+    h4 {
+        width: 100%;
+        max-width: 343px;
+        font-size: 14px;
+    
+    }
+
+    #sun {
+    width: 15.1vh;
+}
+
+#mercury {
+    width: 2.8vh;
+}
+
+#venus {
+    width: 3.1vh;
+}
+
+#earth {
+    width: 7.5vh;
+}
+
+
+#mars {
+    width: 6.7vh;
+}
+
+#jupiter {
+    width: 7.9vh;
+}
+
+#saturn {
+    width: 24.7vh;
+}
+
+#uranus {
+    width: 4.5rem;
+}
+
+#neptune {
+    width: 3.25rem;
+}
+
+#pluto {
+    width: 2.0rem;
+}
+
+}   
