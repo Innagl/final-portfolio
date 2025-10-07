@@ -560,6 +560,7 @@ input {
   background: #CE73FF;
   filter: blur(150px);
   z-index: 0;
+  margin: 0px;
 }
 
 .gradient-behind-projects {
@@ -676,7 +677,7 @@ input {
 .circle-text {
   position: absolute;
   bottom: 10vh;
-  right: 20vw;
+  right: 18vw;
   width: 180px;
   height: 180px;
   border-radius: 50%;
@@ -691,10 +692,19 @@ footer {
 }
 
 
-/* Screen <= 1280px */
-@media (max-width: 1280px) {
+/* Screen <= 1680px */
+@media (max-width: 1680px) {
    .about-photo {
     left: -7vw;
+    /* width: 160px;
+    height: 160px; */
+  }
+}
+
+/* Screen <= 1368px */
+@media (max-width: 1368px) {
+   .about-photo {
+    left: -10vw;
     /* width: 160px;
     height: 160px; */
   }
@@ -703,6 +713,11 @@ footer {
 
 /* Tablet (<= 1024px) */
 @media (max-width: 1024px) {
+     .about-photo {
+    left: -7vw;
+    width: 140px;
+    height: 10px; 
+  }
 
   .gradient-header {
     width: 95%;
@@ -801,13 +816,14 @@ footer {
     justify-content: center;
     padding: 8px;
     width: 80%;
+    margin: 0px;
   }
 
   .header .nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 8px;
+    gap: 0px;
     width: 80%;
     max-width: 350px;
   }
@@ -818,7 +834,7 @@ footer {
 
   .nav a.item {
     font-size: 16px;
-    padding: 8px;
+    padding: 8px 8px 8px 0px;
   }
 
   .circle-text-wrapper {
@@ -947,7 +963,7 @@ input,
   .container-process h1,
   form h1 {
     font-size: 32px;
-    margin-bottom: 40px;
+    margin-bottom: 16px;
   }
 
   .about-container h1 {
@@ -962,10 +978,10 @@ input,
 
   .about-photo {
     position: absolute;
-    top: -9vh;
-    left: -1vw;
-    width: 88px;
-    height: 88px;
+    top: -7vh;
+    left: 2vw;
+    width: 80px;
+    height: 80px;
   }
 
   .project-description {
@@ -1044,7 +1060,7 @@ input,
   }
 
   .greating {
-    margin: 32px 8px 0px 8px;
+    margin: 32px 16px 0px 16px;
   }
 
   #greating-first {
