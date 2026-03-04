@@ -54,13 +54,23 @@ function marryChristmas() {
 const button = document.querySelector('#myButton');
 const audio = document.querySelector('#myAudio');
 
-button.addEventListener ('click', function() {
+const playSVG = `<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none">
+  <path d="M12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22Z" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M10 12.0001V8.53613L13 10.2681L16 12.0001L13 13.7321L10 15.4641V12.0001Z" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+</svg>`;
 
+const stopSVG = `<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none">
+  <path d="M12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22Z" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+  <rect x="9" y="9" width="6" height="6" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+</svg>`;
+
+button.addEventListener('click', function() {
     if (audio.paused) {
         audio.play();
-    }
-    else {
+        button.innerHTML = stopSVG;
+    } else {
         audio.pause();
+        button.innerHTML = playSVG;
     }
 })
 
