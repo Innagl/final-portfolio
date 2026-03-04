@@ -445,7 +445,7 @@ input {
 textarea,
 input,
 .btn {
-  width: 100%;
+  width: auto;
   box-sizing: border-box;
   max-width: 100%;
 }
