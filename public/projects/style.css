@@ -309,6 +309,9 @@ h1 {
 
 .open-project:hover {
   background: linear-gradient(to bottom right, #763CAC 0%, rgba(50, 15, 133, 0.00) 90%);
+  border-color: #763CAC;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 
