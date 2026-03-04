@@ -1,6 +1,5 @@
-
 body {
-  background-image: url("https://cdn.glitch.global/5eed0720-2e81-4528-bf0b-1d4f2b73cdb8/bookCover.png?v=1721995694879");
+  background-image: url("../images/quiz_bg.png");
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,7 +8,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-} 
+}
 
 .container {
   width: 800px;
@@ -39,7 +38,11 @@ body {
   color: ffffff;
 }
 
-#divSecondQuestion, #divThirdQuestion, #divFourthQuestion, #divFifthQuestion, #submitBtn {
+#divSecondQuestion,
+#divThirdQuestion,
+#divFourthQuestion,
+#divFifthQuestion,
+#submitBtn {
   display: none;
 }
 
@@ -64,13 +67,19 @@ p {
 }
 
 .back-step {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 16px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
 }
 
-h1, h2 {
+img {
+  height: 56px;
+}
+
+h1,
+h2 {
   font-family: "Poppins", sans-serif;
 }
 
@@ -78,9 +87,9 @@ h2 {
   margin-top: 40px;
   margin-bottom: 32px;
   font-family: "Poppins", sans-serif;
-  font-weight: 500; 
+  font-weight: 500;
 }
-  
+
 .row {
   display: flex;
   align-items: center;
@@ -91,6 +100,11 @@ h2 {
   border-radius: 8px;
   padding-left: 16px;
   font-family: "Poppins", sans-serif;
+}
+
+.row:hover {
+  background-color: #434949;
+  cursor: pointer;
 }
 
 .button {
@@ -122,14 +136,14 @@ h2 {
   font-weight: 600;
   width: 280px;
   border-radius: 15px;
-  border: 2px solid #CDE7BE; 
-  background: transparent; 
+  border: 2px solid #CDE7BE;
+  background: transparent;
   padding: 16px;
   margin-top: 24px;
 }
 
 #btnSecondary:hover {
-  background-color: rgba(205, 231, 190, 0.1); 
+  background-color: rgba(205, 231, 190, 0.1);
 }
 
 
@@ -192,7 +206,7 @@ a {
 
 /* Mobile: max-width 480px */
 @media (max-width: 480px) {
-.container {
+  .container {
     width: 80vw;
     height: auto;
     flex-direction: column;
@@ -230,14 +244,15 @@ a {
   p {
     font-size: 18px;
   }
-    svg {
+
+  svg {
     width: 100%;
     max-width: 400px;
   }
 }
 
 @media (max-width: 375px) {
-.container {
+  .container {
     width: 80vw;
     height: auto;
     flex-direction: column;
@@ -251,14 +266,13 @@ a {
     border-radius: 12px;
   }
 
-    h1 {
+  h1 {
     font-size: 24px;
 
   }
 
-      svg {
+  svg {
     width: 100%;
     max-width: 353px;
   }
 }
-  
