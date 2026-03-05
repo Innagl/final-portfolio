@@ -16,17 +16,28 @@ const HomePage = () => {
 
   const [mySearch, setMySearch] = useState("");
   const [wordSubmitted, setWordSubmitted] = useState('');
+  const [searchError, setSearchError] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
 
 
   useEffect(() => {
     const getData = async () => {
-      if (!wordSubmitted)
-        return;
-      const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${wordSubmitted}&maxResults=12`);
-      const data = await response.json();
-      console.log(data.items);
-
-      dispatch(setBooksFounded(data.items || []));
+      if (!wordSubmitted) return;
+      setSearchError(null);
+      setIsLoading(true);
+      try {
+        const response = await fetch(`https://www.googleapis.com/books/w/volumes?q=${wordSubmitted}&maxResults=12`);
+        if (response.status === 429) {
+          setSearchError("Too many requests. Please wait a moment and try again.");
+          return;
+        }
+        const data = await response.json();
+        dispatch(setBooksFounded(data.items || []));
+      } catch (err) {
+        setSearchError("Something went wrong. Please try again.");
+      } finally {
+        setIsLoading(false);
+      }
     }
     getData();
   }, [wordSubmitted, dispatch])
@@ -54,6 +65,7 @@ const HomePage = () => {
         Search for your favorite books by title.
       </p>
 
+      {searchError && <p style={{ color: 'red' }}>{searchError}</p>}
       <SearchBar
         mySearch={mySearch}
         onInputChange={(e) => setMySearch(e.target.value)}
@@ -61,6 +73,7 @@ const HomePage = () => {
           e.preventDefault();
           setWordSubmitted(mySearch);
         }}
+        isLoading={isLoading}
       />
 
       <Books booksFounded={booksFounded} />
