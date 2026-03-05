@@ -64,14 +64,14 @@ const stopSVG = `<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" 
   <rect x="9" y="9" width="6" height="6" stroke="white" stroke-width="2" stroke-linejoin="round"/>
 </svg>`;
 
-button.addEventListener('click', function() {
-    if (audio.paused) {
-        audio.play();
-        button.innerHTML = stopSVG;
-    } else {
-        audio.pause();
-        button.innerHTML = playSVG;
-    }
+button.addEventListener('click', function () {
+   if (audio.paused) {
+      audio.play();
+      button.innerHTML = stopSVG;
+   } else {
+      audio.pause();
+      button.innerHTML = playSVG;
+   }
 })
 
 
