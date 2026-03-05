@@ -271,10 +271,36 @@ h1 {
   width: 100%;
   display: flex;
   flex-direction: row;
-  gap: 12px;
-  align-items: flex-end;
   padding: 8px 8px 0px;
   justify-content: flex-start;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 8px 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.github-project {
+  height: 40px;
+  background-color: transparent;
+  border: solid 1px #554763;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 0px 20px;
+  font-size: 16px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+}
+
+.github-project:hover {
+  background: linear-gradient(to bottom right, #763CAC 0%, rgba(50, 15, 133, 0.00) 90%);
+  border-color: #763CAC;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .project-text {
@@ -285,26 +311,23 @@ h1 {
   gap: 12px;
   margin: 0px;
   padding: 0.5rem;
-  max-width: 70%;
-  min-width: 0vw;
+  max-width: 100%;
   width: 100%;
-  min-height: 100%;
   box-sizing: border-box;
-  flex: 1;
 }
 
 
 .open-project {
   height: 40px;
-  background-color: transparent;
-  border: solid 1px #554763;
+  background: linear-gradient(180deg, rgba(48, 16, 128, 0.80) 0%, rgba(120, 64, 173, 0.60) 100%);
+  border: solid 1px #763CAC;
   color: #ffffff;
   border-radius: 20px;
-  padding: 0px 20px;
+  padding: 0px 24px;
   font-size: 16px;
-  margin-bottom: 4px;
+  font-weight: 600;
   white-space: nowrap;
-  margin-right: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 .open-project:hover {
