@@ -3,19 +3,19 @@
 }
 
 body {
-    background-color: #23293D;
+  background-color: #23293D;
 }
 
 .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #logo {
-    margin-top: 40px;
-    margin-bottom: 24px;
-    display: block;
+  margin-top: 40px;
+  margin-bottom: 24px;
+  display: block;
 }
 
 h1 {
@@ -39,10 +39,10 @@ input {
   color: azure;
 }
 
-input:focus { 
-    outline: none;
-    border-color: #65ACC9;
-    box-shadow: 0 0 6px #65ACC9;
+input:focus {
+  outline: none;
+  border-color: #65ACC9;
+  box-shadow: 0 0 6px #65ACC9;
 }
 
 .item {
@@ -81,8 +81,8 @@ p {
 
 
 a:hover {
-    color: #65ACC9;
-    cursor: pointer;
+  color: #65ACC9;
+  cursor: pointer;
 }
 
 .image {
@@ -133,7 +133,7 @@ a:hover {
     height: auto;
     border-radius: 16px;
     align-self: center;
-    margin-bottom: auto; /* pushes image to vertical center */
+    margin-bottom: auto;
     margin-top: auto;
   }
 
@@ -160,14 +160,9 @@ a:hover {
 }
 
 
-
-
-
-
-
 @media (max-width: 480px) {
 
-   .container {
+  .container {
     padding: 16px;
   }
 
@@ -180,7 +175,8 @@ a:hover {
     font-size: 14px;
   }
 
-  a, p {
+  a,
+  p {
     width: 100%;
     font-size: 16px;
     text-align: center;

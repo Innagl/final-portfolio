@@ -1,11 +1,10 @@
-
-
-* {  
+* {
     box-sizing: border-box;
     font-family: "Overpass", sans-serif;
 }
-  
-body, html {
+
+body,
+html {
     background: linear-gradient(180deg, rgba(1, 61, 57, 0.92) 68.75%, rgba(1, 23, 1, 0.79) 100%), #013D39;
     display: flex;
     flex-direction: column;
@@ -69,14 +68,14 @@ body, html {
     font-size: 30px;
     font-weight: bold;
 }
-  
+
 #conditions {
     color: #fafafa;
     font-size: 32px;
     font-weight: bold;
     font-style: italic;
 }
-  
+
 #variation {
     color: #fafafa;
     font-size: 26px;
@@ -84,11 +83,11 @@ body, html {
 }
 
 .blocks-container {
-     display: flex;
-     flex-direction: column;
-     align-items: center; 
-     gap: 20px; 
-     display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    display: none;
 }
 
 .row-blocks {
@@ -121,7 +120,10 @@ body, html {
 }
 
 
-#displayWind, #displayHumidity, #displayFeelsLike, #displayCondition {
+#displayWind,
+#displayHumidity,
+#displayFeelsLike,
+#displayCondition {
     font-size: 44px;
     margin-top: 12px;
     margin-bottom: 2px;
@@ -139,7 +141,5 @@ body, html {
 
 #weather {
     width: 96px;
-     height: 96px;
+    height: 96px;
 }
-
-

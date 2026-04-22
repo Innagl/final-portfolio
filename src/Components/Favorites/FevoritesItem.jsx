@@ -4,12 +4,8 @@ import { removeBookFromFavorites } from "../../redux/favoritesSlice";
 
 const FavoritesItem = ({ favoritesItem }) => {
 
-  // const bookFounded = books.find(item => item.id === favoritesItem.bookId)
   const dispatch = useDispatch();
   const book = favoritesItem.book;
-
-
-  
 
   return (
     <div>
@@ -27,7 +23,7 @@ const FavoritesItem = ({ favoritesItem }) => {
         </div>
         <button
           type="button"
-          onClick={() => dispatch(removeBookFromFavorites({favoriteBookId: favoritesItem.id }))}
+          onClick={() => dispatch(removeBookFromFavorites({ favoriteBookId: favoritesItem.id }))}
           className="stroke-btn"
         >
           Delete

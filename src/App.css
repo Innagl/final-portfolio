@@ -89,13 +89,10 @@ nav {
 .total-books {
     margin-left: 6px;
     background: #cde7be;
-    /* light green background */
     color: #222;
-    /* dark text */
     font-weight: bold;
     padding: 2px 8px;
     border-radius: 16px;
-    /* pill shape */
     font-size: 14px;
     width: 16px;
     height: 16px;
@@ -293,7 +290,6 @@ button {
 
 form {
     display: flex;
-
     flex-direction: row;
     gap: 16px;
     margin: 56px 0px 32px 0px;

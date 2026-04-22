@@ -15,7 +15,7 @@ btn.addEventListener('click', () => {
     });
 
     task.addEventListener('dblclick', () => {
-        toDoContainer.removeChild(task); 
+        toDoContainer.removeChild(task);
     });
 });
 

@@ -37,7 +37,6 @@ function play() {
          icon: "error",
          title: "Oops...",
          text: "We have more planatsWe have 10 planets. Put a number from 1 to 9",
-         //  footer: '<a href="#">Why do I have this issue?</a>'
       });
 
    } else if (isNaN(userNumber)) {
@@ -45,7 +44,6 @@ function play() {
          icon: "error",
          title: "Oops...",
          text: "You need to input a number.",
-         //  footer: '<a href="#">Why do I have this issue?</a>'
       });
    } else {
 
@@ -61,7 +59,6 @@ function play() {
 
          Swal.fire({
             title: "WIN!",
-            // text: "Modal with a custom image.",
             imageUrl: "https://images.unsplash.com/photo-1531686264889-56fdcabd163f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvbmZldHRpfGVufDB8fDB8fHww",
             imageWidth: 600,
             imageHeight: 400,
@@ -75,7 +72,6 @@ function play() {
 gsap.to(".planet", {
    duration: 6,
    ease: "bounce(0.4)",
-   // ease: "back.out(10)",
    y: 25,
    yoyo: true,
    stagger: 1,

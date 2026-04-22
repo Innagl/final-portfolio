@@ -37,7 +37,6 @@ h2 {
   font-size: 16px;
   font-weight: 400;
   color: #9e9ba0;
-  ;
   margin: 0px;
 }
 
@@ -139,7 +138,6 @@ h1 {
 .greating {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-
   margin: 0;
 }
 
@@ -226,10 +224,12 @@ h1 {
 }
 
 .box {
-  flex: 1 1 calc(33.333% - 20px);
+  /* //flex: 1 1 calc(33.333% - 20px); */
+  flex: 0 0 300px;
   max-width: 500px;
   min-width: 280px;
   height: 300px;
+  object-fit: cover;  
   opacity: 1 !important;
   will-change: auto;
   border-radius: 24px;
@@ -247,7 +247,6 @@ h1 {
   flex-direction: column;
   max-width: 500px;
   flex: 0 1 calc(50% - 24px);
-
   padding: 16px;
   box-sizing: border-box;
   background-color: hsl(267, 19%, 12%);
@@ -264,7 +263,6 @@ h1 {
   box-shadow: 0 10px 20px rgba(118, 60, 172, 0.3);
   transform: translateY(-8px) rotateY(3deg) rotateX(3deg);
 }
-
 
 
 .project-description {
@@ -720,29 +718,25 @@ footer {
 
 /* Screen <= 1680px */
 @media (max-width: 1680px) {
-   .about-photo {
+  .about-photo {
     left: -7vw;
-    /* width: 160px;
-    height: 160px; */
   }
 }
 
 /* Screen <= 1368px */
 @media (max-width: 1368px) {
-   .about-photo {
+  .about-photo {
     left: -10vw;
-    /* width: 160px;
-    height: 160px; */
   }
 }
 
 
 /* Tablet (<= 1024px) */
 @media (max-width: 1024px) {
-     .about-photo {
+  .about-photo {
     left: -7vw;
     width: 140px;
-    height: 10px; 
+    height: 10px;
   }
 
   .gradient-header {
@@ -1100,7 +1094,6 @@ input,
   .projects-container {
     padding: 40px 16px;
   }
-
 
   .projects-container {
     margin-bottom: 24px;

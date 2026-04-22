@@ -4,10 +4,8 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    /* instead of fixed height */
     width: 100%;
     overflow-x: hidden;
-    /* allow vertical scroll if needed */
     background-color: transparent;
     position: relative;
     padding-top: 2vh;
@@ -121,7 +119,6 @@ a:hover {
         gap: 40px;
         flex-wrap: wrap;
         padding-bottom: 60px;
-        /* prevents overlap with #edu */
     }
 
     .btn {

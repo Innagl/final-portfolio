@@ -16,7 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 40vw;;
+    width: 40vw;
 }
 
 #icon {
@@ -35,14 +35,14 @@ body {
 }
 
 #btn {
-   background-color: transparent;
-   border: solid 1px #8BBD95;
-   font-family: "Roboto", sans-serif;
-   font-size: 24px;
-   color: #bbe9c4;
-   width: 400px;
-   padding: 20px;
-   cursor: pointer;
+    background-color: transparent;
+    border: solid 1px #8BBD95;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    color: #bbe9c4;
+    width: 400px;
+    padding: 20px;
+    cursor: pointer;
 }
 
 #btn:hover {

@@ -21,8 +21,6 @@ async function getInfo(data) {
 
    const result = await res.json();
    displayResult(result);
-
-
 }
 
 function displayResult(result) {
@@ -73,6 +71,5 @@ function getDate() {
 
    let showDate = document.querySelector("#date");
    showDate.textContent = `${weekDay}` + " " + `${todayDate}` + " " + `${currentMonth}` + " " + `${currentYear}`;
-
 
 }

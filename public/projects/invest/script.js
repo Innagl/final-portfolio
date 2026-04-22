@@ -13,7 +13,6 @@ function calculateResult(e) {
           icon: "error",
           title: "Oops...",
           text: "Please enter your information!",
-          // footer: '<a href="#">Why do I have this issue?</a>'
         });
         return;
     }
@@ -21,10 +20,6 @@ function calculateResult(e) {
     let interestPerYear = amount * rate;
     let interestTotalPeriod = interestPerYear * years;
     let totalValue = amount + interestTotalPeriod;
-
-    // interestTotalPeriod = interestTotalPeriod.toFixed(2);
-    // totalValue = totalValue.toFixed(2);
-
 
     document.querySelector("#value").textContent = totalValue;
     document.querySelector("#interests").textContent = interestTotalPeriod;

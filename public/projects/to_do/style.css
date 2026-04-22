@@ -8,8 +8,6 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    /* padding-left: 40px;
-    padding-right: 40px; */
 }
 
 h1 {
@@ -21,6 +19,7 @@ h1 {
 span {
     color: #ff5631;
 }
+
 .input-button {
     display: flex;
 }
@@ -37,9 +36,9 @@ span {
 }
 
 .input:focus {
-    outline: none; 
+    outline: none;
     border-color: #ff5631;
-  
+
 }
 
 .btn {
@@ -55,10 +54,8 @@ span {
     flex-direction: column;
     align-items: center;
     padding-inline-start: 1px;
-    
+
 }
-
-
 
 .taskAdded {
     background-color: #1e1e1e;
@@ -66,10 +63,9 @@ span {
     height: 56px;
     width: 300px;
     display: flex;
-    align-items: center; /* Center items vertically */
-    justify-content: center; 
+    align-items: center;
+    justify-content: center;
     color: #ffffff;
-
     font-size: 20px;
     border: 1px solid #cfc0a6;
     border-radius: 8px;
@@ -109,25 +105,25 @@ p {
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Important for vertical centering */
-  }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
 
-  .container {
-    max-width: 600px;
-    width: 100%;
-  }
-  
+    .container {
+        max-width: 600px;
+        width: 100%;
+    }
+
 
 }
 
 @media (min-width: 375px) {
     p {
-    width: 100%;
-      max-width:90%;
-    text-align: center;
-  }
+        width: 100%;
+        max-width: 90%;
+        text-align: center;
+    }
 }

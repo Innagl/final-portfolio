@@ -1,10 +1,9 @@
 gsap.registerPlugin(MotionPathPlugin);
 
-
 gsap.to("#book", {
    duration: 8,
    ease: "power1.inOut",
-   repeat: -1, // Infinite loop
+   repeat: -1,
    motionPath: {
       path: "#path",
       align: "#path",
